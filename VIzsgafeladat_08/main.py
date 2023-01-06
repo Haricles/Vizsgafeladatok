@@ -21,4 +21,15 @@ with open("morze.txt","r") as bemenet:
                     uj_sztring+=value+" "
         print (f"A megadott sztring morze kódja: {uj_sztring}")
 
-sztring_morzekodda("Szia")
+    def morze_dekodolo(kod):
+        uj_sztring=""
+        kod=kod.split()
+        for karakter in kod:
+            for key,value in morzeabc.items():
+                if karakter==value:
+                    uj_sztring+=key+" "
+        print (uj_sztring)
+
+
+sztring_morzekodda("szia mizu van veled")
+morze_dekodolo(".-   .-.   ..   ...   --..   -   ---   -   .   .-..   ..-..   ...   --..   ")
