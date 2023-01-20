@@ -33,3 +33,4 @@ with open("morze.txt","r") as bemenet:
 
 sztring_morzekodda("szia mizu van veled")
 morze_dekodolo(".-   .-.   ..   ...   --..   -   ---   -   .   .-..   ..-..   ...   --..   ")
+print ("+")
